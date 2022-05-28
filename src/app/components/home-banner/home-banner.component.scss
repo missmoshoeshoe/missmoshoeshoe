@@ -1,0 +1,27 @@
+.home-banner {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    &__content {
+        // TO DO: Align content
+
+    .heading {
+        font-size: 30px;
+        font-weight: 600;
+        padding: 0.5em 0;
+        // To Do: Add font family
+    }
+
+    .intro-text {
+        font-size: 18px;
+        padding: 0.5em 0;
+        // To Do: Add font family
+    }
+
+    .social-links {
+        padding: 0.5em 0;
+    }
+ }
+}
