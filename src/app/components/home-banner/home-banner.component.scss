@@ -1,27 +1,119 @@
-.home-banner {
-    height: 80vh;
-    width: 100%;
-    background-color: black;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-    &__content {
-        // TO DO: Align content
+.home-banner {
+  height: 80vh;
+  width: 100%;
+  color: black;
+  background-color: #fcfcfc;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width: 768px) {
+      flex-direction: row;
+      padding: 2em 4em;
+    }
+
+    @media(min-width: 1024px) {
+      padding: 6em 4em;
+    }
+
+    @media(min-width: 1280px) {
+      padding: 8em 6em;
+    }
+
+    @media(min-width: 1440px) {
+      padding: 8em 12em;
+    }
+
+    @media(min-width: 2560px) {
+      padding: 8em 24em;
+    }
 
     .heading {
-        font-size: 30px;
-        font-weight: 600;
-        padding: 0.5em 0;
-        // To Do: Add font family
+      font-size: 35px;
+      font-weight: 600;
+      font-family: 'Signika Negative', sans-serif;
+
+      @media(min-width: 768px) {
+        font-size: 40px;
+      }
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      padding: 2em 2em;
+      line-height: 2;
+
+      @media(min-width: 1280px) {
+        padding: 4em 4em;
+      }
+
+      button {
+        background-color: black;
+        color: white;
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-family: 'Signika Negative', sans-serif;
+      }
     }
 
     .intro-text {
-        font-size: 18px;
-        padding: 0.5em 0;
-        // To Do: Add font family
+      font-size: 18px;
+      padding: 0.5em 0 2em;
+      font-family: 'Oxygen', sans-serif;
+
+      @media(min-width: 2560px) {
+        font-size: 32px;
+      }
+
+      .unique-text {
+        color: #A1045A;
+        font-family: 'Acme', sans-serif;
+        font-size: 22px;
+
+        @media(min-width: 2560px) {
+          font-size: 36px;
+        }
+      }
+
+    }
+
+    .intro-image {
+      img {
+        display: none;
+
+        @media(min-width: 1024px) {
+          display: block;
+          height: 60vh;
+        }
+
+        @media(min-width: 1440px) {
+          height: 120vh;
+        }
+
+        @media(min-width: 2560px) {
+          height: 80vh;
+        }
+      }
     }
 
     .social-links {
-        padding: 0.5em 0;
+      padding: 0.5em 0.5em;
+      display: flex;
+      flex-direction: row;
+
+      .fa {
+        padding: 1em 1em 1em 0em;
+        font-size: 20px;
+      }
+
     }
- }
+  }
 }
